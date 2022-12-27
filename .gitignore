@@ -8,3 +8,5 @@ sonatype.sbt
 # idea specific
 .idea/
 .bsp/
+/rpc/jvm/target/
+/rpc/js/target/
