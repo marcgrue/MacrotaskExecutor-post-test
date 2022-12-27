@@ -1,6 +1,7 @@
 /project/project/target/
 /project/target/
 target/
+*/target/
 *.gpg
 sonatype.sbt
 
