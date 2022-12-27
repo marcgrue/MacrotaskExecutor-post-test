@@ -1,0 +1,7 @@
+target/
+*.gpg
+sonatype.sbt
+
+# idea specific
+.idea/
+.bsp/
