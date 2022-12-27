@@ -1,0 +1,40 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(rpc.ExceptionTestJs, org.scalajs.testing.common.Serializer$FingerprintSerializer$$anon$5@7d7adedf, false, [SuiteSelector])[0m
+[0m[[0m[31merror[0m] [0m[0morg.scalajs.testing.common.RPCCore$ClosedException: org.scalajs.testing.adapter.JSEnvRPC$RunTerminatedException[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.testing.common.RPCCore.helpClose(RPCCore.scala:223)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.testing.common.RPCCore.call(RPCCore.scala:164)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.testing.common.RunMuxRPC.call(RunMuxRPC.scala:43)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.testing.adapter.RunnerAdapter.done(RunnerAdapter.scala:58)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$allTestGroupsTask$16(Defaults.scala:1620)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.$anonfun$map$1(TraversableLike.scala:286)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.Map$Map1.foreach(Map.scala:193)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map(TraversableLike.scala:286)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.TraversableLike.map$(TraversableLike.scala:279)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.AbstractTraversable.map(Traversable.scala:108)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Defaults$.$anonfun$allTestGroupsTask$10(Defaults.scala:1618)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.Function1.$anonfun$compose$1(Function1.scala:49)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:68)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:291)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: org.scalajs.testing.adapter.JSEnvRPC$RunTerminatedException[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.testing.adapter.JSEnvRPC.$anonfun$new$1(JSEnvRPC.scala:60)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.testing.adapter.JSEnvRPC.$anonfun$new$1$adapted(JSEnvRPC.scala:60)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: org.scalajs.jsenv.ExternalJSRun$NonZeroExitException: exited with code 1[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalajs.jsenv.ExternalJSRun$$anon$1.run(ExternalJSRun.scala:200)[0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mtestOnly[0m) org.scalajs.testing.common.RPCCore$ClosedException: org.scalajs.testing.adapter.JSEnvRPC$RunTerminatedException[0m

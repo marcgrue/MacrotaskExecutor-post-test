@@ -1,0 +1,14 @@
+[0m[[0m[31merror[0m] [0m[0mCannot determine `jsEnvInput`: Linking result does not have a module named `main`. Set jsEnvInput manually?[0m
+[0m[[0m[31merror[0m] [0m[0mFull report:[0m
+[0m[[0m[31merror[0m] [0m[0mReport([0m
+[0m[[0m[31merror[0m] [0m[0m  publicModules = [[0m
+[0m[[0m[31merror[0m] [0m[0m    [0m
+[0m[[0m[31merror[0m] [0m[0m  ],[0m
+[0m[[0m[31merror[0m] [0m[0m)[0m
+[0m[[0m[31merror[0m] [0m[0m(rpcJVM / Compile / [31mjsEnvInput[0m) Cannot determine `jsEnvInput`: Linking result does not have a module named `main`. Set jsEnvInput manually?[0m
+[0m[[0m[31merror[0m] [0m[0mFull report:[0m
+[0m[[0m[31merror[0m] [0m[0mReport([0m
+[0m[[0m[31merror[0m] [0m[0m  publicModules = [[0m
+[0m[[0m[31merror[0m] [0m[0m    [0m
+[0m[[0m[31merror[0m] [0m[0m  ],[0m
+[0m[[0m[31merror[0m] [0m[0m)[0m

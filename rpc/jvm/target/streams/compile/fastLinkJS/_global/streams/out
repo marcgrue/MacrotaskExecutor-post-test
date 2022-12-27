@@ -1,0 +1,20 @@
+[0m[[0m[0minfo[0m] [0m[0mFast optimizing /Users/mg/github/marcgrue/akka-http-rpc-sloth3/rpc/jvm/target/scala-2.13/rpc-fastopt[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Compute reachability: 472068 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: Assemble LinkedClasses: 47467 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mLinker: 607407 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Batch mode: true[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Incremental part: 310702 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizing 199 methods.[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: Optimizer part: 344710 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mOptimizer: 672376 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Compute reachability: 36305 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: Assemble LinkedClasses: 3820 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mRefiner: 53693 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: Calculate Dependency Info: 3688 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mModule Splitter: 8695 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Generate Classes: 230 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Write trees: 454 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Class tree cache stats: reused: 0 -- invalidated: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: Method tree cache stats: reused: 0 -- invalidated: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mEmitter: 15432 us[0m
+[0m[[0m[0mdebug[0m] [0m[0mBasicBackend: Write result: 8227 us[0m

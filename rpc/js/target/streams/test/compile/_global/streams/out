@@ -1,0 +1,67 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/mg/github/marcgrue/akka-http-rpc-sloth3/rpc/js/src/test/scala/client/PostRequest.scala:32:23: The global execution context in Scala.js is based on JS Promises (microtasks).[0m
+[0m[[0m[33mwarn[0m] [0m[0mUsing it may prevent macrotasks (I/O, timers, UI rendering) from running reliably.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnfortunately, there is no way with ECMAScript only to implement a performant[0m
+[0m[[0m[33mwarn[0m] [0m[0mmacrotask execution context (and hence Scala.js core does not contain one).[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mWe recommend you use: https://github.com/scala-js/scala-js-macrotask-executor[0m
+[0m[[0m[33mwarn[0m] [0m[0mPlease refer to the README.md of that project for more details regarding[0m
+[0m[[0m[33mwarn[0m] [0m[0mmicrotask vs. macrotask execution contexts.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf you do not care about macrotask fairness, you can silence this warning by:[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Adding @nowarn("cat=other") (Scala >= 2.13.x only)[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Setting the -P:scalajs:nowarnGlobalExecutionContext compiler option (Scala < 3.x.y only)[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Using scala.scalajs.concurrent.JSExecutionContext.queue[0m
+[0m[[0m[33mwarn[0m] [0m[0m  (the implementation of ExecutionContext.global in Scala.js) directly.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf you do not care about performance, you can use[0m
+[0m[[0m[33mwarn[0m] [0m[0mscala.scalajs.concurrent.QueueExecutionContext.timeouts().[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt is based on setTimeout which makes it fair but slow (due to clamping).[0m
+[0m[[0m[33mwarn[0m] [0m[0m                [0m
+[0m[[0m[33mwarn[0m] [0m[0m    promise.future.map(_.response.asInstanceOf[String])[0m
+[0m[[0m[33mwarn[0m] [0m[0m                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/mg/github/marcgrue/akka-http-rpc-sloth3/rpc/js/src/test/scala/client/PostRequest.scala:38:22: The global execution context in Scala.js is based on JS Promises (microtasks).[0m
+[0m[[0m[33mwarn[0m] [0m[0mUsing it may prevent macrotasks (I/O, timers, UI rendering) from running reliably.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnfortunately, there is no way with ECMAScript only to implement a performant[0m
+[0m[[0m[33mwarn[0m] [0m[0mmacrotask execution context (and hence Scala.js core does not contain one).[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mWe recommend you use: https://github.com/scala-js/scala-js-macrotask-executor[0m
+[0m[[0m[33mwarn[0m] [0m[0mPlease refer to the README.md of that project for more details regarding[0m
+[0m[[0m[33mwarn[0m] [0m[0mmicrotask vs. macrotask execution contexts.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf you do not care about macrotask fairness, you can silence this warning by:[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Adding @nowarn("cat=other") (Scala >= 2.13.x only)[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Setting the -P:scalajs:nowarnGlobalExecutionContext compiler option (Scala < 3.x.y only)[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Using scala.scalajs.concurrent.JSExecutionContext.queue[0m
+[0m[[0m[33mwarn[0m] [0m[0m  (the implementation of ExecutionContext.global in Scala.js) directly.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf you do not care about performance, you can use[0m
+[0m[[0m[33mwarn[0m] [0m[0mscala.scalajs.concurrent.QueueExecutionContext.timeouts().[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt is based on setTimeout which makes it fair but slow (due to clamping).[0m
+[0m[[0m[33mwarn[0m] [0m[0m                [0m
+[0m[[0m[33mwarn[0m] [0m[0m        _ <- post.map(_ ==> "hello world")[0m
+[0m[[0m[33mwarn[0m] [0m[0m                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/mg/github/marcgrue/akka-http-rpc-sloth3/rpc/js/src/test/scala/client/PostRequest.scala:38:11: The global execution context in Scala.js is based on JS Promises (microtasks).[0m
+[0m[[0m[33mwarn[0m] [0m[0mUsing it may prevent macrotasks (I/O, timers, UI rendering) from running reliably.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnfortunately, there is no way with ECMAScript only to implement a performant[0m
+[0m[[0m[33mwarn[0m] [0m[0mmacrotask execution context (and hence Scala.js core does not contain one).[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mWe recommend you use: https://github.com/scala-js/scala-js-macrotask-executor[0m
+[0m[[0m[33mwarn[0m] [0m[0mPlease refer to the README.md of that project for more details regarding[0m
+[0m[[0m[33mwarn[0m] [0m[0mmicrotask vs. macrotask execution contexts.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf you do not care about macrotask fairness, you can silence this warning by:[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Adding @nowarn("cat=other") (Scala >= 2.13.x only)[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Setting the -P:scalajs:nowarnGlobalExecutionContext compiler option (Scala < 3.x.y only)[0m
+[0m[[0m[33mwarn[0m] [0m[0m- Using scala.scalajs.concurrent.JSExecutionContext.queue[0m
+[0m[[0m[33mwarn[0m] [0m[0m  (the implementation of ExecutionContext.global in Scala.js) directly.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0mIf you do not care about performance, you can use[0m
+[0m[[0m[33mwarn[0m] [0m[0mscala.scalajs.concurrent.QueueExecutionContext.timeouts().[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt is based on setTimeout which makes it fair but slow (due to clamping).[0m
+[0m[[0m[33mwarn[0m] [0m[0m                [0m
+[0m[[0m[33mwarn[0m] [0m[0m        _ <- post.map(_ ==> "hello world")[0m
+[0m[[0m[33mwarn[0m] [0m[0m          ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

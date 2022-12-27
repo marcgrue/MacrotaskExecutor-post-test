@@ -1,0 +1,4 @@
+[0m[[0m[33mwarn[0m] [0m[0m/Users/mg/github/marcgrue/akka-http-rpc-sloth3/rpc/jvm/src/main/scala/server/PostResponse.scala:7:26: Unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0mimport boopickle.Default._[0m
+[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
